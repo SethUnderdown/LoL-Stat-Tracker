@@ -141,7 +141,7 @@ def get_Stats():
     #pull data and turn to json
     warnings.simplefilter('ignore',InsecureRequestWarning)
     try:
-        playerResponse = requests.get("https://127.0.0.1:2999/liveclientdata/playerscores?summonerName=hoboking12", verify=False)
+        playerResponse = requests.get("https://127.0.0.1:2999/liveclientdata/playerscores?summonerName=", verify=False)
     except:
         gameState()
         return
